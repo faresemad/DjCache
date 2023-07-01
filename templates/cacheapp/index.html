@@ -1,11 +1,14 @@
+{% load cache %}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Django Cache</title>
-</head>
-<body>
-    <h1 style="color: blueviolet;font:bold;text-align:center;">Django Cache With Memcached</h1>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Django Cache</title>
+    </head>
+    <body>
+    {% cache 5000 cache_key %}
+        <h1 style="color: blueviolet;font:bold;text-align:center;">Django Cache With Memcached</h1>
+    {% endcache %}
 </body>
 </html>
