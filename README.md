@@ -2,9 +2,16 @@
 Django Cache with Memchaced
 # Installation
 
-- Install Memcached on your system from :[Memcached](https://memcached.org/)
+- Install Memcached on your system, if you are using Linux you can download it from:[Memcached](https://memcached.org/) or you can install it using this command:
+```bash
+sudo apt-get update
+sudo apt-get -y install memcached
+```
+- If you are using Windows you can download it from:[Memcached 64bit](https://static.runoob.com/download/memcached-win64-1.4.4-14.zip) or [Memcached 32bit](https://static.runoob.com/download/memcached-1.2.6-win32-bin.zip)
+- You can go to this site to learn how to install it on Windows:[Memcached Windows](https://linuxhint.com/install-memcached-windows/)
 - This is also the site explaining the cache, you can refer to it :[Django Cache](https://www.tutorialspoint.com/django/django_caching.htm)
 
+- Install pymemcache using this command:
 ```bash
 pip install pymemcache
 ```
